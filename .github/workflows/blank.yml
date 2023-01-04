@@ -1,6 +1,6 @@
-- name: Setup Node.js environment
-  uses: actions/setup-node@v3.5.1
-  with:
+name: Setup Node.js environment
+uses: actions/setup-node@v3.5.1
+with:
     # Set always-auth in npmrc.
     always-auth: # optional, default is false
     # Version Spec of the version to use. Examples: 12.x, 10.15.1, >=10.15.0.
@@ -21,12 +21,12 @@
     cache: # optional
     # Used to specify the path to a dependency file: package-lock.json, yarn.lock, etc. Supports wildcards or a list of file names for caching multiple dependencies.
     cache-dependency-path: # optional
-
-- name: Newman CLI (Postman) Action
-  # You may pin to the exact commit or the version.
-  # uses: anthonyvscode/newman-action@cdca06b722f82f1a6e2ff4803960dc61c9f46240
-  uses: anthonyvscode/newman-action@v1.1
-  with:
+    
+    
+    name: Newman CLI (Postman) Action
+    # You may pin to the exact commit or the version.
+    # uses: anthonyvscode/newman-action@cdca06b722f82f1a6e2ff4803960dc61c9f46240
+    uses: anthonyvscode/newman-action@v1.1with:
     # Postman API key
     apiKey: # optional
     # Collection to use
